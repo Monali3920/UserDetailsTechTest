@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_banner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_160sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imgDetailsCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/img_banner"
+            app:layout_constraintStart_toStartOf="@+id/img_banner"
+            app:layout_constraintEnd_toEndOf="@+id/img_banner"
+            app:layout_constraintTop_toBottomOf="@+id/img_banner">
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/imgDetailsCardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardBackgroundColor="@color/white"-->
+<!--            android:layout_marginHorizontal="2dp"-->
+<!--            android:layout_marginVertical="4dp"-->
+<!--            app:cardCornerRadius="0dp"-->
+<!--            android:layout_marginStart="@dimen/layout_margin"-->
+<!--            android:layout_marginEnd="@dimen/layout_margin"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/img_banner">-->
+
+        <LinearLayout
+            android:id="@+id/llImageViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="2.2k" />
+
+                <TextView
+                    android:id="@+id/tvViewCountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="likes"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llViews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="22" />
+
+                <TextView
+                    android:id="@+id/tvViewLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Views"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llcomments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="150" />
+
+                <TextView
+                    android:id="@+id/tvCommentsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Comments" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lldownloads"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDownloads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="150" />
+
+                <TextView
+                    android:id="@+id/tvDownloadCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Downloads" />
+            </LinearLayout>
+        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtImgSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:text="jhbjhn j"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/imgDetailsCardView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtImgTags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:text="jhbjhn j"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/txtImgSize" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtImgType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:text="jhbjhn j"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/txtImgTags" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_10sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_10sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtUploadedUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="ndcjdchdbh"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/txtImgType" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

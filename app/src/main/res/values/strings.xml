@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UserDetails</string>
+    <string name="read_more">Read More…</string>
+    <string name="no_data_available_for_list">No data available for list</string>
+    <string name="str_connection_error">No internet connection</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="FirstNameText">Email</string>
+    <string name="EmailTextField">Enter Email id</string>
+    <string name="SecondNameTextField">Enter Second Name</string>
+    <string name="LastNameText">Last Name :</string>
+    <string name="EmailText">Email</string>
+    <string name="UserMailId">Enter Email</string>
+    <string name="submitButton">Register</string>
+    <string name="List_of_Users_text">List Of Registered Users</string>
+    <string name="PasswordText">Password</string>
+    <string name="PasswordTextFiels">Enter Password</string>
+    <string name="UserNameTextView">User Name:</string>
+    <string name="UsernameTextField">Enter User Name</string>
+    <string name="backButton">Back</string>
+    <string name="Login_text">Login</string>
+    <string name="Login_button">Login</string>
+    <string name="signupText">Register</string>
+    <string name="AgeText">Age</string>
+    <string name="AgeTextField">Enter Age</string>
+    <string name="no_instance_found">No instance found</string>
+</resources>

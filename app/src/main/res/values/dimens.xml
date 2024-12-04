@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="big_padding">32dp</dimen>
+    <dimen name="_40sdp">40dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_8sdp">8dp</dimen>
+    <dimen name="_50sdp">100dp</dimen>
+    <dimen name="_160sdp">160dp</dimen>
+    <dimen name="_120sdp">180dp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+    <dimen name="_13sdp">13dp</dimen>
+    <dimen name="_11sdp">11dp</dimen>
+</resources>
